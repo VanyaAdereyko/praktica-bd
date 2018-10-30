@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PractikaDataSet2" targetNamespace="http://tempuri.org/PractikaDataSet2.xsd" xmlns:mstns="http://tempuri.org/PractikaDataSet2.xsd" xmlns="http://tempuri.org/PractikaDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PractikaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PractikaConnectionString (Settings)" PropertyReference="ApplicationSettings.Praktika1.Properties.Settings.GlobalReference.Default.PractikaConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Другой районTableAdapter" GeneratorDataComponentClassName="Другой_районTableAdapter" Name="Другой район" UserDataComponentName="Другой районTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PractikaConnectionString (Settings)" DbObjectName="Другой район" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ФИО, [Владельцы.Район], Название, [Магазины.Район], Процент FROM [Другой район]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ФИО" DataSetColumn="ФИО" />
+              <Mapping SourceColumn="Владельцы.Район" DataSetColumn="Владельцы_Район" />
+              <Mapping SourceColumn="Название" DataSetColumn="Название" />
+              <Mapping SourceColumn="Магазины.Район" DataSetColumn="Магазины_Район" />
+              <Mapping SourceColumn="Процент" DataSetColumn="Процент" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Молодой1TableAdapter" GeneratorDataComponentClassName="Молодой1TableAdapter" Name="Молодой1" UserDataComponentName="Молодой1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PractikaConnectionString (Settings)" DbObjectName="Молодой1" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Район, ФИО, Дата_рождения, [Count-Номер_магазина] FROM Молодой1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Район" DataSetColumn="Район" />
+              <Mapping SourceColumn="ФИО" DataSetColumn="ФИО" />
+              <Mapping SourceColumn="Дата_рождения" DataSetColumn="Дата_рождения" />
+              <Mapping SourceColumn="Count-Номер_магазина" DataSetColumn="Count-Номер_магазина" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Нет 18TableAdapter" GeneratorDataComponentClassName="Нет_18TableAdapter" Name="Нет 18" UserDataComponentName="Нет 18TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PractikaConnectionString (Settings)" DbObjectName="Нет 18" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Номер_регистрации, Дата_регистрации, ФИО, Возраст, Название FROM [Нет 18]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Номер_регистрации" DataSetColumn="Номер_регистрации" />
+              <Mapping SourceColumn="Дата_регистрации" DataSetColumn="Дата_регистрации" />
+              <Mapping SourceColumn="ФИО" DataSetColumn="ФИО" />
+              <Mapping SourceColumn="Возраст" DataSetColumn="Возраст" />
+              <Mapping SourceColumn="Название" DataSetColumn="Название" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PractikaDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PractikaDataSet2" msprop:Generator_UserDSName="PractikaDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Другой_x0020_район" msprop:Generator_TableClassName="Другой_районDataTable" msprop:Generator_TableVarName="tableДругой_район" msprop:Generator_TablePropName="Другой_район" msprop:Generator_RowDeletingName="Другой_районRowDeleting" msprop:Generator_RowChangingName="Другой_районRowChanging" msprop:Generator_RowEvHandlerName="Другой_районRowChangeEventHandler" msprop:Generator_RowDeletedName="Другой_районRowDeleted" msprop:Generator_UserTableName="Другой район" msprop:Generator_RowChangedName="Другой_районRowChanged" msprop:Generator_RowEvArgName="Другой_районRowChangeEvent" msprop:Generator_RowClassName="Другой_районRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ФИО" msprop:Generator_ColumnVarNameInTable="columnФИО" msprop:Generator_ColumnPropNameInRow="ФИО" msprop:Generator_ColumnPropNameInTable="ФИОColumn" msprop:Generator_UserColumnName="ФИО" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Владельцы_Район" msprop:Generator_ColumnVarNameInTable="columnВладельцы_Район" msprop:Generator_ColumnPropNameInRow="Владельцы_Район" msprop:Generator_ColumnPropNameInTable="Владельцы_РайонColumn" msprop:Generator_UserColumnName="Владельцы_Район" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Название" msprop:Generator_ColumnVarNameInTable="columnНазвание" msprop:Generator_ColumnPropNameInRow="Название" msprop:Generator_ColumnPropNameInTable="НазваниеColumn" msprop:Generator_UserColumnName="Название" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Магазины_Район" msprop:Generator_ColumnVarNameInTable="columnМагазины_Район" msprop:Generator_ColumnPropNameInRow="Магазины_Район" msprop:Generator_ColumnPropNameInTable="Магазины_РайонColumn" msprop:Generator_UserColumnName="Магазины_Район" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Процент" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnПроцент" msprop:Generator_ColumnPropNameInRow="Процент" msprop:Generator_ColumnPropNameInTable="ПроцентColumn" msprop:Generator_UserColumnName="Процент" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Молодой1" msprop:Generator_TableClassName="Молодой1DataTable" msprop:Generator_TableVarName="tableМолодой1" msprop:Generator_TablePropName="Молодой1" msprop:Generator_RowDeletingName="Молодой1RowDeleting" msprop:Generator_RowChangingName="Молодой1RowChanging" msprop:Generator_RowEvHandlerName="Молодой1RowChangeEventHandler" msprop:Generator_RowDeletedName="Молодой1RowDeleted" msprop:Generator_UserTableName="Молодой1" msprop:Generator_RowChangedName="Молодой1RowChanged" msprop:Generator_RowEvArgName="Молодой1RowChangeEvent" msprop:Generator_RowClassName="Молодой1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Район" msprop:Generator_ColumnVarNameInTable="columnРайон" msprop:Generator_ColumnPropNameInRow="Район" msprop:Generator_ColumnPropNameInTable="РайонColumn" msprop:Generator_UserColumnName="Район" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ФИО" msprop:Generator_ColumnVarNameInTable="columnФИО" msprop:Generator_ColumnPropNameInRow="ФИО" msprop:Generator_ColumnPropNameInTable="ФИОColumn" msprop:Generator_UserColumnName="ФИО" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Дата_рождения" msprop:Generator_ColumnVarNameInTable="columnДата_рождения" msprop:Generator_ColumnPropNameInRow="Дата_рождения" msprop:Generator_ColumnPropNameInTable="Дата_рожденияColumn" msprop:Generator_UserColumnName="Дата_рождения" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Count-Номер_магазина" msprop:Generator_ColumnVarNameInTable="_columnCount_Номер_магазина" msprop:Generator_ColumnPropNameInRow="_Count_Номер_магазина" msprop:Generator_ColumnPropNameInTable="_Count_Номер_магазинаColumn" msprop:Generator_UserColumnName="Count-Номер_магазина" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Нет_x0020_18" msprop:Generator_TableClassName="Нет_18DataTable" msprop:Generator_TableVarName="tableНет_18" msprop:Generator_TablePropName="Нет_18" msprop:Generator_RowDeletingName="Нет_18RowDeleting" msprop:Generator_RowChangingName="Нет_18RowChanging" msprop:Generator_RowEvHandlerName="Нет_18RowChangeEventHandler" msprop:Generator_RowDeletedName="Нет_18RowDeleted" msprop:Generator_UserTableName="Нет 18" msprop:Generator_RowChangedName="Нет_18RowChanged" msprop:Generator_RowEvArgName="Нет_18RowChangeEvent" msprop:Generator_RowClassName="Нет_18Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Номер_регистрации" msprop:Generator_ColumnVarNameInTable="columnНомер_регистрации" msprop:Generator_ColumnPropNameInRow="Номер_регистрации" msprop:Generator_ColumnPropNameInTable="Номер_регистрацииColumn" msprop:Generator_UserColumnName="Номер_регистрации" type="xs:int" minOccurs="0" />
+              <xs:element name="Дата_регистрации" msprop:Generator_ColumnVarNameInTable="columnДата_регистрации" msprop:Generator_ColumnPropNameInRow="Дата_регистрации" msprop:Generator_ColumnPropNameInTable="Дата_регистрацииColumn" msprop:Generator_UserColumnName="Дата_регистрации" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ФИО" msprop:Generator_ColumnVarNameInTable="columnФИО" msprop:Generator_ColumnPropNameInRow="ФИО" msprop:Generator_ColumnPropNameInTable="ФИОColumn" msprop:Generator_UserColumnName="ФИО" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Возраст" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnВозраст" msprop:Generator_ColumnPropNameInRow="Возраст" msprop:Generator_ColumnPropNameInTable="ВозрастColumn" msprop:Generator_UserColumnName="Возраст" type="xs:int" minOccurs="0" />
+              <xs:element name="Название" msprop:Generator_ColumnVarNameInTable="columnНазвание" msprop:Generator_ColumnPropNameInRow="Название" msprop:Generator_ColumnPropNameInTable="НазваниеColumn" msprop:Generator_UserColumnName="Название" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
